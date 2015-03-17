@@ -1,2 +1,0 @@
-# iphone-app
-iphone application
