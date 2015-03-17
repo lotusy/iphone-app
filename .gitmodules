@@ -1,0 +1,3 @@
+[submodule "LotusySDK"]
+	path = LotusySDK
+	url = https://github.com/lotusy/ios-sdk.git
