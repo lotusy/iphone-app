@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DishCategoryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Category" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X7L-sK-BTh">
+                        <rect key="frame" x="13" y="16" width="47" height="14"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.58431372550000005" green="0.58431372550000005" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Re-Lv-Qye">
+                        <rect key="frame" x="13" y="36" width="60" height="60"/>
+                        <color key="backgroundColor" red="0.97254901959999995" green="0.83921568629999999" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="4Fi-h7-3tP"/>
+                            <constraint firstAttribute="width" secondItem="1Re-Lv-Qye" secondAttribute="height" multiplier="1:1" id="klp-rN-rld"/>
+                            <constraint firstAttribute="height" constant="60" id="ku8-Qz-luj"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                        <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="-18"/>
+                        <state key="normal" title="Drink">
+                            <color key="titleColor" red="0.58431372550000005" green="0.58431372550000005" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4Fi-h7-3tP"/>
+                            </mask>
+                        </variation>
+                        <connections>
+                            <action selector="drinkButtonTapAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0ZP-Mx-I7a"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pek-6f-e2N">
+                        <rect key="frame" x="151" y="25" width="18" height="50"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CMo-xp-BcM">
+                        <rect key="frame" x="91" y="36" width="60" height="60"/>
+                        <color key="backgroundColor" red="0.97647064920000004" green="0.50196081400000003" blue="0.50196081400000003" alpha="1" colorSpace="deviceRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                        <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="-18"/>
+                        <state key="normal" title="Appy">
+                            <color key="titleColor" red="0.58431372550000005" green="0.58431372550000005" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="appyButtonTapAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WZF-qX-erW"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cae-Ht-ohE">
+                        <rect key="frame" x="73" y="8" width="18" height="83"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iwD-z5-EJH">
+                        <rect key="frame" x="229" y="8" width="18" height="83"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xcc-hN-AhM">
+                        <rect key="frame" x="169" y="36" width="60" height="60"/>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.69803921570000005" blue="0.5568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                        <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="-18"/>
+                        <state key="normal" title="Entree">
+                            <color key="titleColor" red="0.58431372550000005" green="0.58431372550000005" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="entreeButtonTapAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="f95-QF-A4M"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLw-Ey-oXi">
+                        <rect key="frame" x="247" y="36" width="60" height="60"/>
+                        <color key="backgroundColor" red="1" green="0.55294117649999996" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="11"/>
+                        <inset key="titleEdgeInsets" minX="0.0" minY="18" maxX="0.0" maxY="-18"/>
+                        <state key="normal" title="Dessert">
+                            <color key="titleColor" red="0.58431372550000005" green="0.58431372550000005" blue="0.58431372550000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="dessertButtonTapAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Pa6-JA-gha"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="iwD-z5-EJH" firstAttribute="width" secondItem="Pek-6f-e2N" secondAttribute="width" id="02e-nc-DHf"/>
+                    <constraint firstItem="Pek-6f-e2N" firstAttribute="leading" secondItem="CMo-xp-BcM" secondAttribute="trailing" id="35c-SS-hD7"/>
+                    <constraint firstAttribute="centerY" secondItem="CMo-xp-BcM" secondAttribute="centerY" constant="-16.5" id="7RE-ES-yKQ"/>
+                    <constraint firstItem="CMo-xp-BcM" firstAttribute="leading" secondItem="Cae-Ht-ohE" secondAttribute="trailing" id="7T5-wO-MP1"/>
+                    <constraint firstItem="X7L-sK-BTh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="7cn-vP-Oio"/>
+                    <constraint firstItem="CMo-xp-BcM" firstAttribute="height" secondItem="1Re-Lv-Qye" secondAttribute="height" id="BYZ-3r-zQd"/>
+                    <constraint firstItem="1Re-Lv-Qye" firstAttribute="width" secondItem="vLw-Ey-oXi" secondAttribute="width" id="BvA-lv-niO"/>
+                    <constraint firstItem="1Re-Lv-Qye" firstAttribute="height" secondItem="vLw-Ey-oXi" secondAttribute="height" id="Cbd-tH-FQT"/>
+                    <constraint firstItem="iwD-z5-EJH" firstAttribute="leading" secondItem="xcc-hN-AhM" secondAttribute="trailing" id="GVQ-VH-fZz"/>
+                    <constraint firstItem="vLw-Ey-oXi" firstAttribute="leading" secondItem="iwD-z5-EJH" secondAttribute="trailing" id="H8Y-eE-wNg"/>
+                    <constraint firstItem="iwD-z5-EJH" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="HBI-GS-GoS"/>
+                    <constraint firstItem="Pek-6f-e2N" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="155" id="ILs-o8-wW1"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Cae-Ht-ohE" secondAttribute="bottom" id="J1r-ao-Hwu"/>
+                    <constraint firstItem="iwD-z5-EJH" firstAttribute="width" secondItem="Cae-Ht-ohE" secondAttribute="width" id="KPk-lp-cyr"/>
+                    <constraint firstItem="Pek-6f-e2N" firstAttribute="leading" secondItem="CMo-xp-BcM" secondAttribute="trailing" id="LZc-uG-X1H"/>
+                    <constraint firstItem="Pek-6f-e2N" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="17" id="NDB-Sz-vHt"/>
+                    <constraint firstAttribute="centerX" secondItem="Pek-6f-e2N" secondAttribute="centerX" id="OzK-m4-AqI"/>
+                    <constraint firstItem="1Re-Lv-Qye" firstAttribute="height" secondItem="xcc-hN-AhM" secondAttribute="height" id="QeK-AM-gJN"/>
+                    <constraint firstItem="CMo-xp-BcM" firstAttribute="leading" secondItem="Cae-Ht-ohE" secondAttribute="trailing" id="SYb-ql-Pc0"/>
+                    <constraint firstAttribute="centerY" secondItem="xcc-hN-AhM" secondAttribute="centerY" constant="-16.5" id="W7h-RG-yvB"/>
+                    <constraint firstItem="xcc-hN-AhM" firstAttribute="leading" secondItem="Pek-6f-e2N" secondAttribute="trailing" id="glS-GS-1UO"/>
+                    <constraint firstAttribute="centerY" secondItem="vLw-Ey-oXi" secondAttribute="centerY" constant="-16.5" id="h6k-vg-g9c"/>
+                    <constraint firstAttribute="centerY" secondItem="1Re-Lv-Qye" secondAttribute="centerY" constant="-16" id="kTD-OD-tWh"/>
+                    <constraint firstItem="1Re-Lv-Qye" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="lu0-Aj-gcp"/>
+                    <constraint firstItem="X7L-sK-BTh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="ojC-2I-foN"/>
+                    <constraint firstItem="1Re-Lv-Qye" firstAttribute="width" secondItem="xcc-hN-AhM" secondAttribute="width" id="prw-oS-WAE"/>
+                    <constraint firstItem="iwD-z5-EJH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="rfe-eS-TLf"/>
+                    <constraint firstItem="Cae-Ht-ohE" firstAttribute="leading" secondItem="1Re-Lv-Qye" secondAttribute="trailing" id="sol-qn-ELe"/>
+                    <constraint firstAttribute="centerY" secondItem="Pek-6f-e2N" secondAttribute="centerY" id="thj-HD-JmM"/>
+                    <constraint firstItem="1Re-Lv-Qye" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="vvD-mA-tqC"/>
+                    <constraint firstItem="CMo-xp-BcM" firstAttribute="width" secondItem="1Re-Lv-Qye" secondAttribute="width" id="xGA-Vi-zVk"/>
+                    <constraint firstItem="Cae-Ht-ohE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="xmL-3B-VmV"/>
+                    <constraint firstItem="Cae-Ht-ohE" firstAttribute="leading" secondItem="1Re-Lv-Qye" secondAttribute="trailing" id="xnm-EW-hmb"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="lu0-Aj-gcp"/>
+                        <exclude reference="xnm-EW-hmb"/>
+                        <exclude reference="7T5-wO-MP1"/>
+                        <exclude reference="35c-SS-hD7"/>
+                        <exclude reference="ILs-o8-wW1"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="appyButton" destination="CMo-xp-BcM" id="jKw-9X-NtI"/>
+                <outlet property="dessertButton" destination="vLw-Ey-oXi" id="hk1-pd-IhZ"/>
+                <outlet property="drinkButton" destination="1Re-Lv-Qye" id="X1G-2J-83d"/>
+                <outlet property="entreeButton" destination="xcc-hN-AhM" id="tpY-3p-Prh"/>
+                <outlet property="titleLabel" destination="X7L-sK-BTh" id="4tX-Yo-fB5"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

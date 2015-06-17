@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+#import "LTViewController.h"
+
+@interface ViewController : LTViewController
 
 
 @end

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="AmaticSC-Regular.ttf">
+            <string>AmaticSC-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DishTakePhotoTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KZE-bE-AMW" userLabel="Take Photo Button">
+                        <rect key="frame" x="-16" y="0.0" width="352" height="114"/>
+                        <color key="backgroundColor" red="0.81568627449999997" green="0.81568627449999997" blue="0.81568627449999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" name="AmaticSC-Regular" family="Amatic SC" pointSize="24"/>
+                        <inset key="titleEdgeInsets" minX="0.0" minY="40" maxX="25" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="77" minY="0.0" maxX="0.0" maxY="25"/>
+                        <state key="normal" title="Take a photo" image="icn-camera.png">
+                            <color key="titleColor" red="0.37254901959999998" green="0.20784313730000001" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pin15.png" translatesAutoresizingMaskIntoConstraints="NO" id="CTy-uC-2de">
+                        <rect key="frame" x="-8" y="114" width="30" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="MYl-m3-DMI"/>
+                            <constraint firstAttribute="height" constant="15" id="Mcy-KX-jZG"/>
+                            <constraint firstAttribute="width" constant="30" id="a6i-MM-rEL"/>
+                            <constraint firstAttribute="height" constant="30" id="tQc-sI-ekS"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="MYl-m3-DMI"/>
+                                <exclude reference="Mcy-KX-jZG"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sushi Garden 0.6mi - 4652 Kingsway, Burnaby, BC" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tyn-Ab-2bo">
+                        <rect key="frame" x="22" y="114" width="290" height="30"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Xe7-8m-z0r"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.35686274509999999" green="0.35686274509999999" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="CTy-uC-2de" secondAttribute="bottom" constant="-8" id="5I8-Ba-qYQ"/>
+                    <constraint firstItem="tyn-Ab-2bo" firstAttribute="leading" secondItem="CTy-uC-2de" secondAttribute="trailing" id="6h9-pF-RV4"/>
+                    <constraint firstItem="KZE-bE-AMW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-24" id="Bos-zD-DWH"/>
+                    <constraint firstItem="tyn-Ab-2bo" firstAttribute="top" secondItem="KZE-bE-AMW" secondAttribute="bottom" id="PPt-Uq-xnc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="KZE-bE-AMW" secondAttribute="trailing" constant="-24" id="Pf6-be-f2M"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="tyn-Ab-2bo" secondAttribute="trailing" id="Sbg-Jw-3LP"/>
+                    <constraint firstItem="CTy-uC-2de" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-16" id="i8x-I0-h3M"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="tyn-Ab-2bo" secondAttribute="bottom" constant="-8" id="jvc-y9-eeQ"/>
+                    <constraint firstItem="KZE-bE-AMW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-8" id="k5V-Nk-cTs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="tyn-Ab-2bo" id="Em5-oQ-gW4"/>
+                <outlet property="pinView" destination="CTy-uC-2de" id="KEY-ap-j2I"/>
+                <outlet property="takePhotoButton" destination="KZE-bE-AMW" id="aX2-mh-tBY"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icn-camera.png" width="30" height="22"/>
+        <image name="pin15.png" width="15" height="15"/>
+    </resources>
+</document>

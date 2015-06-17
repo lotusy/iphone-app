@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusinessSearchViewController">
+            <connections>
+                <outlet property="clearButton" destination="cWG-Di-KDp" id="WGn-Po-sDx"/>
+                <outlet property="tableView" destination="IeS-AG-dTm" id="jj1-SR-D66"/>
+                <outlet property="textField" destination="5Vp-TS-fAW" id="Fb3-fh-XGF"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img-city-bar.png" translatesAutoresizingMaskIntoConstraints="NO" id="cpZ-Kb-oL0">
+                    <rect key="frame" x="0.0" y="0.0" width="600" height="113"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="113" id="GMe-ey-j7x"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="IeS-AG-dTm">
+                    <rect key="frame" x="0.0" y="113" width="600" height="487"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="0yS-2i-tlA"/>
+                        <outlet property="delegate" destination="-1" id="DhF-bK-cfz"/>
+                    </connections>
+                </tableView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search or enter restaurant name" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="5Vp-TS-fAW">
+                    <rect key="frame" x="60" y="44" width="510" height="17"/>
+                    <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="pPg-Jc-hJj"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWG-Di-KDp">
+                    <rect key="frame" x="557" y="39" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="5vf-2G-ReV"/>
+                        <constraint firstAttribute="width" constant="28" id="u0q-2h-svJ"/>
+                    </constraints>
+                    <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="imageEdgeInsets" minX="7" minY="7" maxX="7" maxY="7"/>
+                    <state key="normal" image="37-circle-x.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="clearTextField:" destination="-1" eventType="touchUpInside" id="6kg-oq-htL"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="cpZ-Kb-oL0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2Nu-yJ-vCB"/>
+                <constraint firstAttribute="trailing" secondItem="5Vp-TS-fAW" secondAttribute="trailing" constant="30" id="I3w-ZD-ChV"/>
+                <constraint firstAttribute="trailing" secondItem="cWG-Di-KDp" secondAttribute="trailing" constant="15" id="K89-qs-UNK"/>
+                <constraint firstAttribute="trailing" secondItem="IeS-AG-dTm" secondAttribute="trailing" id="OhU-Ao-A0a"/>
+                <constraint firstAttribute="centerX" secondItem="5Vp-TS-fAW" secondAttribute="centerX" constant="-15" id="Qfq-qX-Lfb"/>
+                <constraint firstAttribute="bottom" secondItem="IeS-AG-dTm" secondAttribute="bottom" id="TQE-lU-nqi"/>
+                <constraint firstItem="5Vp-TS-fAW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="fp2-fA-oxj"/>
+                <constraint firstItem="5Vp-TS-fAW" firstAttribute="centerY" secondItem="cWG-Di-KDp" secondAttribute="centerY" id="nHX-Wn-BHW"/>
+                <constraint firstItem="IeS-AG-dTm" firstAttribute="top" secondItem="cpZ-Kb-oL0" secondAttribute="bottom" id="sxQ-pe-Mmc"/>
+                <constraint firstAttribute="trailing" secondItem="cpZ-Kb-oL0" secondAttribute="trailing" id="tnQ-LS-V5q"/>
+                <constraint firstItem="cpZ-Kb-oL0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="v78-Me-hil"/>
+                <constraint firstItem="IeS-AG-dTm" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zda-PK-sE4"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="37-circle-x.png" width="28" height="28"/>
+        <image name="img-city-bar.png" width="320" height="113"/>
+    </resources>
+</document>
